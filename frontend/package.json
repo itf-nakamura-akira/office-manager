@@ -5,7 +5,8 @@
         "npm ci": "npm ci",
         "start": "ng serve",
         "unit test": "jest",
-        "build": "ng build"
+        "build": "ng build",
+        "prettier": "prettier --write ."
     },
     "private": true,
     "husky": {

@@ -9,6 +9,6 @@
     "javascript.referencesCodeLens.enabled": true,
     "workbench.colorCustomizations": {
         "activityBar.background": "#ea3737",
-        "activityBar.foreground": "#ffffff",
-    },
+        "activityBar.foreground": "#ffffff"
+    }
 }
