@@ -1,0 +1,44 @@
+version: '3'
+services:
+    office-manager:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: office-manager
+        command: sleep infinity
+        restart: always
+        ports:
+            - '56887:4200' # Angular
+            # - '56428:8080' # Java
+        volumes:
+            - ../:/workspace
+        env_file: ./environment.env
+        # depends_on:
+        #     - portfolio-db
+    # portfolio-db:
+    #     image: mariadb:10.7.1
+    #     container_name: portfolio-db
+    #     restart: always
+    #     env_file: ./environment.env
+    #     volumes:
+    #         - portfolio-db-volume:/var/lib/mariadb/
+    #         - ../database/conf.d:/etc/mysql/conf.d
+    #         - ../database/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+    #     ports:
+    #         - '56420:3306' # MariaDB
+    # portfolio-db-test:
+    #     image: mariadb:10.7.1
+    #     container_name: portfolio-db-test
+    #     restart: always
+    #     env_file: ./environment.env
+    #     volumes:
+    #         - portfolio-db-volume:/var/lib/mariadb/
+    #         - ../database/conf.d:/etc/mysql/conf.d
+    #         - ../database/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+    #     ports:
+    #         - '56421:3306' # MariaDB
+# volumes:
+#     portfolio-db-volume:
+#         driver: local
+#     portfolio-db-test-volume:
+#         driver: local
