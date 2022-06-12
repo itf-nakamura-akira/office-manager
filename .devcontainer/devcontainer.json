@@ -14,7 +14,8 @@
         // Frontend(Angular)
         "angular.ng-template",
         "dbaeumer.vscode-eslint",
-        "sibiraj-s.vscode-scss-formatter",
+        "firsttris.vscode-jest-runner",
+        "sibiraj-s.vscode-scss-formatter"
         // Backend(Java)
         // "GabrielBB.vscode-lombok",
         // "humao.rest-client",

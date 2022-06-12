@@ -1,0 +1,14 @@
+{
+    "[typescript]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.implementationsCodeLens.enabled": true,
+    "javascript.referencesCodeLens.enabled": true,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#ea3737",
+        "activityBar.foreground": "#ffffff",
+    },
+}
