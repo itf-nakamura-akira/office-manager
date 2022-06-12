@@ -3,11 +3,10 @@
     "version": "0.0.0",
     "scripts": {
         "npm ci": "npm ci",
-        "ng": "ng",
         "start": "ng serve",
+        "unit test": "jest",
         "build": "ng build",
-        "watch": "ng build --watch --configuration development",
-        "test": "ng test"
+        "watch": "ng build --watch --configuration development"
     },
     "private": true,
     "husky": {
@@ -37,14 +36,10 @@
         "@angular-devkit/build-angular": "^14.0.1",
         "@angular/cli": "~14.0.1",
         "@angular/compiler-cli": "^14.0.0",
-        "@types/jasmine": "~4.0.0",
+        "@types/jest": "^28.1.1",
         "husky": "4.3.x",
-        "jasmine-core": "~4.1.0",
-        "karma": "~6.3.0",
-        "karma-chrome-launcher": "~3.1.0",
-        "karma-coverage": "~2.2.0",
-        "karma-jasmine": "~5.0.0",
-        "karma-jasmine-html-reporter": "~1.7.0",
+        "jest": "^28.1.1",
+        "jest-preset-angular": "^12.1.0",
         "lint-staged": "13.0.x",
         "prettier": "2.6.x",
         "pretty-quick": "3.1.x",
