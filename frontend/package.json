@@ -5,8 +5,7 @@
         "npm ci": "npm ci",
         "start": "ng serve",
         "unit test": "jest",
-        "build": "ng build",
-        "watch": "ng build --watch --configuration development"
+        "build": "ng build"
     },
     "private": true,
     "husky": {
