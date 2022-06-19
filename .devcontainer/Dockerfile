@@ -25,9 +25,6 @@ RUN apt-get autoremove -y \
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs
 RUN npm update -g npm
-
-# Angular
-RUN npm install -g @angular/cli@14.0.1
 RUN npm install -g ts-node@10.8.1
 
 # # Java
