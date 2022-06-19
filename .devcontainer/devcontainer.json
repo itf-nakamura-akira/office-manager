@@ -15,8 +15,9 @@
         "angular.ng-template",
         "dbaeumer.vscode-eslint",
         "firsttris.vscode-jest-runner",
-        "sibiraj-s.vscode-scss-formatter"
-        // Backend(Java)
+        "sibiraj-s.vscode-scss-formatter",
+        // Backend(Rust)
+        "rust-lang.rust-analyzer"
         // "GabrielBB.vscode-lombok",
         // "humao.rest-client",
         // "redhat.java",

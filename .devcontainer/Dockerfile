@@ -27,11 +27,9 @@ RUN sudo apt-get install -y nodejs
 RUN npm update -g npm
 RUN npm install -g ts-node@10.8.1
 
-# # Java
-# RUN wget -O- https://apt.corretto.aws/corretto.key | sudo apt-key add -
-# RUN sudo add-apt-repository 'deb https://apt.corretto.aws stable main'
-# RUN sudo apt-get update;
-# RUN sudo apt-get install -y java-17-amazon-corretto-jdk
+# Rust
+RUN curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
+RUN apt-get -y install gcc
 
 # Git
 RUN sudo git config --global user.name itf-nakamura-akira
